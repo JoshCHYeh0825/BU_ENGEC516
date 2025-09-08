@@ -4,14 +4,14 @@ close all;
 
 % Part b
 % Define parameters for the signal
-T = 2;
+T = 2;          % 0.5 Width of pulse
 Fs = 1000;      % Sampling frequency, Hz
 dt = 1/Fs;      % Sampling Period, s
-t = -5:dt:5;    % Time vector
+t = -10:dt:10;    % Time vector
 N = T * Fs;     % Number of samples
 
 % Impulse Signal
-impulse = round(N/2);
+
 x = zeros(1, N);
 x(impulse) = 1;
 
@@ -19,7 +19,7 @@ x(impulse) = 1;
 mag = abs(fft(x));
 
 % Frequency vector
-f = (0:N-1) * (Fs/N);
+f =-10*pi:0.01:10*pi;
 
 % Plotting the Magnitude Spectrum
 plot(f, mag);
