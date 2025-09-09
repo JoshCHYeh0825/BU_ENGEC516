@@ -4,7 +4,7 @@ close all;
 
 % Part b
 % Define parameters for the signal
-T = 2;          % 0.5 Width of pulse
+T = 2*pi;          % 0.5 Width of pulse
 Fs = 1000;      % Sampling frequency, Hz
 dt = 1/Fs;      % Sampling Period, s
 t = -10:dt:10;  % Time vector
@@ -29,7 +29,8 @@ mag_shifted = fftshift(mag);
 plot(w, mag_shifted);
 xlabel('Frequency (Hz)');
 ylabel('|X(jω)|');
-xlim([-10 10]);
+xlim([-0.5 0.5]);
+
 grid on;
 
 

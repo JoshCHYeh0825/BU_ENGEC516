@@ -23,7 +23,7 @@ f = (0:N-1) * (Fs/N);
 
 % Plotting the Magnitude Spectrum
 plot(f, mag);
-xlabel('Frequency (Hz)');
+xlabel('Time (s)');
 ylabel('|X(jω)|');
 grid on;
 
