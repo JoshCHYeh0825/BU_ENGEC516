@@ -2,7 +2,7 @@ clc;
 clear all;
 close all;
 
-% Part a
+% Part b
 T = 2;              % Period
 k = -6:6;           % Integer variables
 impulse = k * T;    % t = kT
